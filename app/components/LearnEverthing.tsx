@@ -8,12 +8,12 @@ import { FaMicrophone, FaVideo, FaPhone, FaEllipsisH } from "react-icons/fa";
 
 const LearnEverthing = () => {
   return (
-    <div className="bg-black text-white py-6 md:px-40">
+    <div className="bg-black text-white py-6 md:px-20 lg:px-40">
       {/* Learn */}
       <h3 className=" text-center text-4xl my-10"> Learn Everthing Web3</h3>
 
-      <section className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-4   lg:grid-cols-3  lg:gap-4">
-        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 py-10 md:py-5 px-6">
+      <section className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-4 mx-5 md:mx-0   lg:grid-cols-3  lg:gap-4">
+        <div className=" bg-[#1A1A1A] rounded-3xl items-center  py-10 md:py-5 px-6">
           <p className="mb-5">
             <Image
               src={colorfilter}
@@ -27,7 +27,7 @@ const LearnEverthing = () => {
             using encription algorithms
           </p>
         </div>
-        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 py-17 px-6 md:py-5">
+        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 md:mx-0 py-17 px-6 md:py-5">
           <p className="mb-5">
             <Image
               src={colorfilter}
@@ -41,7 +41,7 @@ const LearnEverthing = () => {
             using encription algorithms
           </p>
         </div>
-        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 py-10 px-6 md:py-5">
+        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 md:mx-0 py-10 px-6 md:py-5">
           <p className="mb-5">
             <Image
               src={colorfilter}
@@ -91,7 +91,7 @@ hover:scale-85"
         <section className="flex flex-col gap-10">
           <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 pt-10 ">
             <h3 className="text-3xl text-center mb-7">Elevate Your Career</h3>
-            <p className="text-[#718A77] text-2xl px-6">
+            <p className="text-[#718A77] text-1xl px-6">
               Engage witt top mentors on Base3 to not only expand your skills
               butt also open doors to potential employment.
             </p>
@@ -122,7 +122,7 @@ hover:scale-85"
                 />{" "}
               </p>
               <h3 className="text-2xl">Build your skill set in Web3 space</h3>
-              <p className="text-[#717171] text-2xl mt-5">
+              <p className="text-[#717171] text-1xl mt-5">
                 Digital currency, wich is an alternative form of payment created
                 using encription algorithms
               </p>
@@ -137,7 +137,7 @@ hover:scale-85"
                 />{" "}
               </p>
               <h3 className="text-2xl">Earn exciting Tokens</h3>
-              <p className="text-[#717171] text-2xl mt-5">
+              <p className="text-[#717171] text-1xl mt-5">
                 Digital currency, wich is an alternative form of payment crated
                 using encription algorithms
               </p>

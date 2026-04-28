@@ -24,7 +24,7 @@ function MentorCard() {
 
   return (
     <div className="mt-20">
-      <h2 className="text-3xl md:text-5xl px-10 md:px-60 text-white text-center font-bold mb-4">
+      <h2 className="text-3xl md:text-5xl px-10 md:px-30 lg:px-60 text-white text-center font-bold mb-4">
         Join 2000+ mentors to lead the next gen in the web3 space
       </h2>
       <p className="text-[#717171] text-sm md:text-xl text-center px-10 leading-relaxed">

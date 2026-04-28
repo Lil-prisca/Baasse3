@@ -8,16 +8,16 @@ const Footer = () => {
   };
 
   return (
-    <div className="  flex flex-col lg:flex-row gap-10px md:px-40">
+    <div className="  flex flex-col lg:flex-row gap-10px md:px-20 lg:px-40">
       {/*  */}
       <footer
         className=" bg-[#1A1A1A] flex flex-col mx-8 px-8 my-10 gap-10  rounded-3xl
-         md:flex-1 md:gap-20  md:flex-row-reverse  md:px-15 md:pt-10
+         lg:flex-1 lg:gap-20  lg:flex-row-reverse  lg:px-15 lg:pt-10
        "
       >
         <div className="md:mt-10">
           {/* Get mentored */}
-          <div className=" text-white  rounded-3xl  py-8 md:hidden">
+          <div className=" text-white  rounded-3xl  py-8 lg:hidden">
             {" "}
             <h3 className="text-xl font-semibold mb-3">
               Get mentored by world class mentors
@@ -43,7 +43,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-            <p className=" text-sm mt-4 mb-5">
+            <p className=" text-sm mt-4 mb-0">
               Digital currency, which is an alternative form of payment created
               using encryption algorithms.
             </p>
@@ -51,8 +51,8 @@ const Footer = () => {
         </div>
 
         {/*  */}
-        <section className=" text-white   pt-10 pb-6 ">
-          <h3 className=" hidden text-xl font-semibold mb-3 md:block">
+        <section className=" text-white  mb:pt-2  pt-10 pb-6 ">
+          <h3 className=" hidden text-xl font-semibold mb-3 lg:block">
             Get mentored by world class mentors
           </h3>
           {/* Links */}
@@ -81,9 +81,9 @@ const Footer = () => {
       </footer>
 
       {/* Social icons */}
-      <div className="flex justify-between md:my-10 mb-8 mx-2 px-8 md:grid md:grid-rows-3 md:justify-between md:gap-10 md:px-0 ">
+      <div className="flex justify-between  lg:my-10 mb-8 mx-2 px-8 lg:grid lg:grid-rows-3 lg:justify-between lg:gap-10 lg:px-0 ">
         {/* Twitter/X */}
-        <div className=" bg-[#121212] py-5 px-8 rounded-2xl md:items-center md:flex">
+        <div className=" bg-[#121212] py-5 px-8 rounded-2xl lg:items-center lg:flex">
           <a
             href="#"
             className="w-9 h-9 md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors md:items-center"
@@ -98,7 +98,7 @@ const Footer = () => {
           </a>
         </div>
         {/* LinkedIn */}
-        <div className=" bg-[#121212] py-5 px-8 rounded-2xl md:items-center md:flex">
+        <div className=" bg-[#121212] py-5 px-8 rounded-2xl lg:items-center lg:flex">
           <a
             href="#"
             className="w-9 h-9 md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors"
@@ -114,7 +114,7 @@ const Footer = () => {
         </div>
 
         {/* Instagram */}
-        <div className=" bg-[#121212] py-5 px-8 rounded-2xl md:items-center md:flex">
+        <div className=" bg-[#121212] py-5 px-8 rounded-2xl lg:items-center lg:flex">
           <a
             href="#"
             className="w-9 h-9  md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors"

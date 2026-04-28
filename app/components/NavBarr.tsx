@@ -5,10 +5,10 @@ import logo1 from "@/app/assets/Logo (1).png";
 
 const NavBar = () => {
   return (
-    <div className="bg-[#F8F8F8] w-full h-full py-7">
+    <div className="bg-[#F8F8F8] w-full h-full py-7 border-0">
       <div
         className=" flex justify-between shadow-sm  bg-transparent
-      rounded-4xl px-3 py-2  mx-5  rounded- bg-red"
+      rounded-4xl px-3 py-2  mx-5"
       >
         <Image
           src={logo1}
