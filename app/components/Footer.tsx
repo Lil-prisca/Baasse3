@@ -8,10 +8,10 @@ const Footer = () => {
   };
 
   return (
-    <div className="  flex flex-col lg:flex-row gap-10px md:px-20 lg:px-40">
+    <div className="  flex flex-col lg:flex-row  gap-10px md:px-20 lg:px-40">
       {/*  */}
       <footer
-        className=" bg-[#1A1A1A] flex flex-col mx-8 px-8 my-10 gap-10  rounded-3xl
+        className=" bg-[#1A1A1A] flex flex-col mx-6 px-6 my-10 gap-10  rounded-3xl
          lg:flex-1 lg:gap-20  lg:flex-row-reverse  lg:px-15 lg:pt-10
        "
       >
@@ -33,13 +33,13 @@ const Footer = () => {
               Join our newsletter
             </h3>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 ">
               <input
                 type="email"
                 placeholder=" Your email"
-                className=" bg-white/20 placeholder-white/60 text-white text-sm pl-4 py-2.5 rounded-full outline-none "
+                className=" bg-white/20 min-w-4 placeholder-white/60 text-white text-sm  pl-4 py-2.5 rounded-full outline-none "
               />
-              <button className="bg-[#00B328] text-white text-sm font-medium px-4 py-2.5 rounded-full whitespace-nowrap">
+              <button className="bg-[#00B328] text-white text-[12px] md:text-sm font-medium px-2 py-2 rounded-full whitespace-nowrap">
                 Subscribe
               </button>
             </div>
@@ -81,15 +81,15 @@ const Footer = () => {
       </footer>
 
       {/* Social icons */}
-      <div className="flex justify-between  lg:my-10 mb-8 mx-2 px-8 lg:grid lg:grid-rows-3 lg:justify-between lg:gap-10 lg:px-0 ">
+      <div className="flex justify-between  lg:my-10 mb-8  mx-6   lg:grid lg:grid-rows-3 lg:justify-between lg:gap-10 lg:px-0 ">
         {/* Twitter/X */}
         <div className=" bg-[#121212] py-5 px-8 rounded-2xl lg:items-center lg:flex">
           <a
             href="#"
-            className="w-9 h-9 md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors md:items-center"
+            className="w-5 h-5 md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors md:items-center"
           >
             <svg
-              className="w-8 h-8   text-[#C4F4CF]"
+              className="w-6 h-6   text-[#C4F4CF]"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className=" bg-[#121212] py-5 px-8 rounded-2xl lg:items-center lg:flex">
           <a
             href="#"
-            className="w-9 h-9 md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors"
+            className="w-5 h-5 md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors"
           >
             <svg
               className="w-8 h-8 text-[#C4F4CF]"
@@ -117,7 +117,7 @@ const Footer = () => {
         <div className=" bg-[#121212] py-5 px-8 rounded-2xl lg:items-center lg:flex">
           <a
             href="#"
-            className="w-9 h-9  md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors"
+            className="w-5 h-5  md:h-15 md:w-15 rounded-full  flex items-center justify-center hover:bg-[#00B328]/20 transition-colors"
           >
             <svg
               className="w-4 h-4 text-[#C4F4CF]"

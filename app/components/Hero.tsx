@@ -79,8 +79,8 @@ const Hero = () => {
         />
       </div>
       {/* Stats */}
-      <div className="flex w-full pb-12 pt-12 bg-black justify-around md:px-30  lg:px-50 ">
-        <div className="text-center pl-10">
+      <div className="flex w-full px-5 pb-12 pt-12 bg-black justify-between md:px-30  lg:px-50 ">
+        <div className="text-center ">
           <p className="text-4xl font-bold text-[#C4F4CF] md:text-5xl">2K+</p>
           <p className="text-xs text-[#717171] mt-1">Mentors</p>
         </div>
@@ -90,7 +90,7 @@ const Hero = () => {
           <p className="text-xs text-[#717171] mt-1">World projects</p>
         </div>
         {/* <div className="w-px bg-[#2A2A2A]" /> */}
-        <div className="text-center pr-10">
+        <div className="text-center ">
           <p className="text-4xl font-bold text-[#C4F4CF] md:text-5xl">154+</p>
           <p className="text-xs text-[#717171] mt-1">Countries</p>
         </div>

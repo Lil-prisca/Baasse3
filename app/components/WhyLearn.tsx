@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyLearn = () => {
   return (
-    <section className=" mx-5 px-4 py-12 md:px-20 lg:px-40">
+    <section className=" mx-5  py-12 md:px-20 lg:px-40">
       <h2 className="text-3xl font-bold text-white text-center mb-8">
         Why Learn Everything Web3?
       </h2>

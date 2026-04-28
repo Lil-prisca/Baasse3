@@ -27,7 +27,7 @@ const LearnEverthing = () => {
             using encription algorithms
           </p>
         </div>
-        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 md:mx-0 py-17 px-6 md:py-5">
+        <div className=" bg-[#1A1A1A] rounded-3xl items-center  py-10 px-6 md:py-5">
           <p className="mb-5">
             <Image
               src={colorfilter}
@@ -41,7 +41,7 @@ const LearnEverthing = () => {
             using encription algorithms
           </p>
         </div>
-        <div className=" bg-[#1A1A1A] rounded-3xl items-center mx-5 md:mx-0 py-10 px-6 md:py-5">
+        <div className=" bg-[#1A1A1A] rounded-3xl items-center  py-10 px-6 md:py-5">
           <p className="mb-5">
             <Image
               src={colorfilter}
