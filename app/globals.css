@@ -15,7 +15,7 @@
 
   @keyframes draw {
     0% {
-      stroke-dashoffset: 4000;
+      stroke-dashoffset: 6492;
     }
     100% {
       stroke-dashoffset: 0;
