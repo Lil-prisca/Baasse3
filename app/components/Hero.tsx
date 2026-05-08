@@ -6,7 +6,7 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className=" bg-[#F8F8F8] text-white  pt-10 ">
+    <section className=" bg-[#F8F8F8] text-white border-0 pt-10 ">
       {/* Badge */}
       <div className="flex justify-center px-5 mb-6">
         <div className=" text-black  flex  px-0 py-1 items-center gap-3 -rotate-4 w-85">
@@ -100,3 +100,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// tech stack.md

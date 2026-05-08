@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/app/assets/Logo.png";
+// import logo from "@/app/assets/Logo.png";
 import logo1 from "@/app/assets/Logo (1).png";
 
 const NavBar = () => {
@@ -12,6 +12,8 @@ const NavBar = () => {
       >
         <Image
           src={logo1}
+          loading="eager"
+          priority
           className="w-15  my-auto  h-5 ml-5 center"
           alt="logo"
         />

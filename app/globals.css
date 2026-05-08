@@ -10,6 +10,17 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --animate-draw: draw 5s linear infinite;
+
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
