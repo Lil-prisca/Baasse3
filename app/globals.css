@@ -16,9 +16,15 @@
   @keyframes draw {
     0% {
       stroke-dashoffset: 6492;
-    }
-    100% {
+    } /* start hidden */
+    45% {
       stroke-dashoffset: 0;
+    } /* fully drawn */
+    55% {
+      stroke-dashoffset: 0;
+    } /* pause at full */
+    100% {
+      stroke-dashoffset: 6492;
     }
   }
 }
