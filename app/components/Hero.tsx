@@ -78,12 +78,12 @@ const Hero = () => {
           mass: 1,
         }}
         className="  text-5xl 
-       mx-2  
-        text-black rotate-[-5deg] font-bold text-center leading-tight
+       mx-[25px] 
+        text-black rotate-[-3deg] font-bold text-center leading-tight
          mb-6 
          md:text-7xl 
          md:mb-10  
-         md:mx-10 "
+         md:mx-9"
       >
         <motion.span>Mentorship by</motion.span> <br />
         <motion.div
