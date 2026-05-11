@@ -1,4 +1,7 @@
 "use client";
+
+import { useEffect, useState } from "react";
+
 import Image from "next/image";
 import React from "react";
 import ipad from "../assets/ipad-mobile.webp";
@@ -18,6 +21,16 @@ const mentorImg = [
 ];
 
 const Hero = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // hide preloader after everything l
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000); // adjust time as needed
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className=" bg-[#F8F8F8] text-white border-0 pt-10 ">
       {/* Badge */}
@@ -47,10 +60,23 @@ const Hero = () => {
 
       {/* Headline */}
       <motion.h1
-        initial={{ y: 100, opacity: 0, rotate: -8 }}
-        whileInView={{ y: 0, opacity: 1, rotate: -5 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        initial={{ y: -300, opacity: 0, rotate: -8 }}
+        animate={
+          isLoading
+            ? {}
+            : {
+                y: 0,
+                opacity: 1,
+                rotate: -5,
+                scale: 1,
+              }
+        }
+        transition={{
+          type: "spring",
+          stiffness: 120,
+          damping: 10,
+          mass: 1,
+        }}
         className="  text-5xl 
        mx-2  
         text-black rotate-[-5deg] font-bold text-center leading-tight
@@ -59,7 +85,7 @@ const Hero = () => {
          md:mb-10  
          md:mx-10 "
       >
-        Mentorship by <br />
+        <motion.span>Mentorship by</motion.span> <br />
         <motion.div
           animate={{
             y: [0, -8, 0],
@@ -68,6 +94,7 @@ const Hero = () => {
             duration: 3,
             repeat: Infinity,
             ease: "easeInOut",
+            delay: 1.2,
           }}
           className="relative overflow-hidden bg-[#00B328] text-4xl w-fit flex mx-auto px-7 py-5 text-white rounded-2xl mt-1 md:text-7xl md:mt-0 md:px-10 lg:text-8xl lg:mt-0 lg:px-10"
         >
@@ -86,7 +113,7 @@ const Hero = () => {
 
           <FaStar className="relative z-10 text-black pl-3 flex items-center lg:pl-8" />
         </motion.div>
-        Mentors!
+        <motion.span>Mentors!</motion.span>
       </motion.h1>
 
       <p className="text-[#717171] text-center text-sm leading-relaxed mb-8 px-6 md:px-45 lg:px-65 lg:text-2xl lg:text-black  ">
