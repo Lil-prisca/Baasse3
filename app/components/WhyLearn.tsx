@@ -1,28 +1,50 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+import img1 from "../assets/mentor1.jpg";
+import img2 from "../assets/mentor2.jpg";
+import img3 from "../assets/Mentor3.jpg";
 import React from "react";
+const mentorImg = [
+  { image: img1 },
+  { image: img2 },
+  { image: img1 },
+  { image: img3 },
+];
 
 const WhyLearn = () => {
   return (
     <section className=" mx-5  py-12 md:px-20 lg:px-40">
-      <h2 className="text-3xl font-bold text-white text-center mb-8">
+      <motion.h2
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        // viewport={{ once: true }}
+        className="text-3xl font-bold text-white text-center mb-8"
+      >
         Why Learn Everything Web3?
-      </h2>
+      </motion.h2>
 
-      <div className="flex flex-col gap-4">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-4"
+      >
         {/* Trusted by key players */}
         <div className="bg-[#0E1910] text-white text-center rounded-3xl px-6 py-8">
           <div className="flex  m-auto w-fit  -space-x-10 mb-10">
             {[...Array(4)].map((_, i) => (
               <div
                 key={i}
-                className="w-20 h-20 rounded-full bg-gradient-to-br from-green-700 to-green-900   flex items-center justify-center"
+                className="w-20 h-20 rounded-full to-green-900   flex items-center justify-center"
               >
-                <svg
-                  className="w-15 h-15 text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z" />
-                </svg>
+                <Image
+                  src={mentorImg[i].image}
+                  alt="Player"
+                  className="w-20 h-20 rounded-full"
+                />
               </div>
             ))}
           </div>
@@ -44,7 +66,7 @@ const WhyLearn = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
